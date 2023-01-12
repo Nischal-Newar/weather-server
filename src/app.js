@@ -73,5 +73,10 @@ app.get('*', (req,res) => {
 });
 
 //start the server
-app.listen(port,() => {
+app.listen(port, '0.0.0.0', (err, info) => {
+    if(err) {
+        console.log(err)
+    } else {
+        console.log("Application running at port: ", port)
+    }
 })
