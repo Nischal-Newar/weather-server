@@ -6,7 +6,7 @@ const forecast = require('../src/utils/forecastCode');
 const hbs = require('hbs');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 //set paths
 const staticPath = path.join(__dirname,"../public");
